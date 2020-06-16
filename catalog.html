@@ -11,7 +11,7 @@
 
 <body class="page-body">
     <header class="main-header">
-        <nav class="main-navigation container">
+        <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
             </a>
@@ -192,20 +192,20 @@
         </div>
     </footer>
 
-    <section class="modal">
+    <section class="contact">
         <h2>Напишите нам</h2>
-        <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-                <label class="user-message" for="appointment-name">Ваше имя:</label>
-                <input class="message-icon-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="contact-item">
+                <label for="name">Ваше имя:</label>
+                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
-            <p>
-                <label class="user-message" for="appointment-email">Ваш email:</label>
-                <input class="message-icon-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
+            <p class="contact-item">
+                <label class="user-message" for="email">Ваш email:</label>
+                <input id="email" type="email" name="email" placeholder="email@example.com">
             </p>
-            <p>
-                <label class="user-message" for="appointment-message">Ваш текст:</label>
-                <textarea class="message-icon-text" id="appointment-message" name="message" placeholder="В свободной форме"></textarea>
+            <p class="contact-item">
+                <label for="message">Ваш текст:</label>
+                <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>

@@ -9,7 +9,7 @@
 </head>
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation container">
+    <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотоип Нёрдс">
       </a>
@@ -49,22 +49,22 @@
       </div>
     </section>
 
-    <section>
+    <section class="services">
       <h2 class="visually-hidden">Форматы разработки</h2>
-      <ul>
-        <li>
+      <ul class="service-list">
+        <li class="service-item">
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="blank.html">Заказать</a>          
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="blank.html">Заказать</a>
           </li>
-        <li>
+        <li class="service-item">
           <h3>Презентации</h3>
           <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -107,12 +107,12 @@
       </table>
     </div>
 
-    <div>
+    <div class="partners-list">
       <h2 class="visually-hidden">Клиенты</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="200" height="68" alt="Логотип htmlacademy"></a>
-      <a href=""><img src="img/logo-borodinski.png" width="209" height="90" alt="Логотип Borodinski"></a>
-      <a href=""><img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>
-      <a href=""><img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Mishka"></a>
+      <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="partners-img" src="img/logo-html.png" width="200" height="68" alt="Логотип htmlacademy"></a>
+      <a class="partners-link" href=""><img class="partners-img" src="img/logo-borodinski.png" width="209" height="90" alt="Логотип Borodinski"></a>
+      <a class="partners-link" href=""><img class="partners-img" src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>
+      <a class="partners-link" href=""><img class="partners-img" src="img/logo-mishka.png" width="173" height="84" alt="Логотип Mishka"></a>
     </div>
   </main>
 
@@ -160,20 +160,20 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="contact">
     <h2>Напишите нам</h2>
-    <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label class="user-message" for="appointment-name">Ваше имя:</label>
-        <input class="message-icon-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="contact-item">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
-      <p>
-        <label class="user-message" for="appointment-email">Ваш email:</label>
-        <input class="message-icon-email" id="appointment-email" type="email" name="email" placeholder="email@example.com">
+      <p class="contact-item">
+        <label for="email">Ваш email:</label>
+        <input id="email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p>
-        <label class="user-message" for="appointment-message">Ваш текст:</label>
-        <textarea class="message-icon-text" id="appointment-message" name="message" placeholder="В свободной форме"></textarea>
+      <p class="contact-item">
+        <label for="message">Ваш текст:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
