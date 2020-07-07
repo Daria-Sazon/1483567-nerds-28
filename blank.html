@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -15,6 +15,8 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
+    <div class="main-navigation-wrapper">
+      <div class="container">
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
@@ -22,30 +24,32 @@
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-       <a class="shopping-cart" href="blank.html"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
+       <a class="cart-icon" href="blank.html"><img class="logo-cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> Корзина</a>
       </div>
+     </div>
+   </div>
     </nav>
   </header>
 
-  <h1>Добро пожаловать в дизайн-студию "Нёрдс"!</h1>
+  <h1 class="page-title">Добро пожаловать в дизайн-студию "Нёрдс"!</h1>
 
   <footer class="page-footer main-footer">
-    <div class="container">
-    <section class="footer-contacts">
+    <div class="container-contacts">
+      <div class="footer-contacts">     
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург,<br>
+      <p class="footer-contacts-name">NЁRDS DESIGN STUDIO</p>
+      <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</P>
-      <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-      <a href="blank.html">Напишите нам</a>
-      <img src="img/map.png" width="1440" height="416" alt="Карта">
-      <img src="img/map-marker.svg" width="231" height="190" alt="Маркер локации">
-    </section>
+      <p><a class="footer-contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+      <a class="button button-red-2" href="blank.html">Напишите нам</a>
+      </div>
+      <div class="img-map">
+      <img class="map" src="img/map.png" width="1440" height="416" alt="Карта">
+      <img class="map-marker" src="img/map-marker.svg" width="231" height="190" alt="Маркер локации">
+      </div>
+    </div>
 
-    <section class="footer-social">
-      <h2 class="visually-hidden">Давайте дружить!</h2>
-      <p class="footer-text-header">Давайте дружить, это выгодно!</p>
-      <span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+    <section class="footer-social">     
       <ul class="social-list">
         <li class="social-item">
           <a class="social-button" href="blank.html">
@@ -63,36 +67,35 @@
           </a>
         </li>
       </ul>
+      <div class="footer-text">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <p class="footer-text-header">Давайте дружить, это выгодно!</p>
+        <span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+      </div>
     </section>
-    </div>
   </footer>
 
-  <section class="contact">
+  <section class="modal modal-message">
     <h2>Напишите нам</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="contact-item">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="contact-label" for="name">Ваше имя:</label>
+        <input class="login-name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="contact-item">
-        <label for="email">Ваш email:</label>
-        <input id="email" type="email" name="email" placeholder="email@example.com">
+        <label class="contact-label" for="email">Ваш email:</label>
+        <input class="login-email-user" id="email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p class="contact-item">
-        <label for="message">Ваш текст:</label>
-        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+        <label class="contact-label" for="message">Ваш текст:</label>
+        <textarea class="message-user" id="message" name="message" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button button-red-3" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <section>
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <!--Тут будет карта-->
-    <button type="button">Закрыть</button>
-  </section>
+  <script src="./js/modal.js"></script>
 
 </body>
-
 </html>

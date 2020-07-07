@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия Нёрдс</title>
@@ -7,12 +8,16 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="page-body">
+  <div class="site-wrapper">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотоип Нёрдс">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
+      <div class="main-navigation-wrapper">
+      <div class="container">
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
@@ -20,78 +25,96 @@
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <div class="user-navigation">
-        <a class="shopping-cart" href="blank.html"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина</a>
+        <a class="cart-icon" href="blank.html"> <img class="logo-cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+           Корзина</a>
       </div>
+    </div>
+    </div>
     </nav>
   </header>
-
-  <main class="page-product container">
+  
+  <div class="site-wrapper site-wrapper-1">
+  <div class="container">
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-    <section>
-      <section>
-        <h2 class="visually-hidden">Слайд 1</h2>
-        <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
-        <p>Долго, дорого, скурпулёзно.</p>
-        <p>Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.</p>
-        <a href="blank.html">Узнать больше</a>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Слайд 2</h2>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Слайд 3</h2>
-      </section>
-      <div>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-      </div>
-    </section>
-
-    <section class="service">
-      <h2 class="visually-hidden">Форматы разработки</h2>
-      <ul class="service-list">
-        <li class="service-item">
-          <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
-          <h3 class="service-header">Веб-сайты</h3>
-          <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="service-button1" href="blank.html">Заказать</a>          
+    <section class="slider">
+       <ul class="slider-list">
+        <li class="slider-item slide slide-current">
+          <h3 class="slide-title">Долго, дорого, скурпулёзно.</h3>
+          <p class="slide-text">Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.</p>
+          <a class="slide-button" href="#"></a>
+          <a class="button button-info" href="blank.html">Узнать больше</a>
         </li>
-        <li class="service-item">
-          <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-          <h3 class="service-header">Приложения</h3>
-          <p  class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="service-button2" href="blank.html">Заказать</a>
-          </li>
-        <li class="service-item">
-          <h3 class="service-header">Презентации</h3>
-          <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-          <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="service-button3" href="blank.html">Заказать</a>
+        <li class="slider-item slide">
+          <h3 class="slide-title">Любим математику как никто другой</h3>
+          <p class="slide-text">Никакого креатива, только математические формулы<br>
+            для расчета идеальных пропорций</p>
+            <a class="slide-button" href="#"></a>
+          <a class="button button-info" href="blank.html">Узнать больше</a>
+        </li>
+        <li class="slider-item slide">
+          <h3 class="slide-title">Только ночь, только хардкор.</h3>
+          <p class="slide-text">Работать днем, как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается.</p>
+            <a class="slide-button" href="#"></a>
+          <a class="button button-info" href="blank.html">Узнать больше</a>
         </li>
       </ul>
+      <div class="slider-controls">
+        <button class="current" type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
+      </div>
     </section>
+  </div>
+  </div>
+  </div>
+  
+  <section class="service">
+<h2 class="visually-hidden">Форматы разработки</h2>
+<ul class="service-list">
+  <li class="service-item">
+    <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+    <h3 class="service-header">Веб-сайты</h3>
+    <p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+    <a class="button button-red-1" href="blank.html">Заказать</a>          
+  </li>
+  <li class="service-item">
+    <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+    <h3 class="service-header">Приложения</h3>
+    <p  class="service-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+    <a class="button button-green" href="blank.html">Заказать</a>
+    </li>
+  <li class="service-item">
+    <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+    <h3 class="service-header">Презентации</h3>
+    <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+    <a class="button button-yellow" href="blank.html">Заказать</a>
+  </li>
+</ul>
+</section>
 
+    
+    <div class="content-about">
     <section class="about">
       <h2 class="visually-hidden">Студия</h2>
       <p class="about-header">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
       <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
         рук, как роботы.</p>
-    </section>
-
+    
     <section class="orders">
       <p class="about-orders">Выполняем заказы на разработку:</p>
-      <ul about-orders-item>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      <ul class="about-orders-list">
+        <li class="orders-item">Веб-сайтов любой сложности</li>
+        <li class="orders-item">Мобильных приложений для iOS и Android</li>
+        <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </section>
+  </section>
 
     <div class="results">
-      <p class="results-text">С 2004 года любим точность во всем:</p>
-      <img src="img/nerds-illustration1.png" width="360" height="208" alt="Иллюстрация Нёрдс">
+      <img class="nerds-img" src="img/nerds-illustration1.png" width="360" height="208" alt="Иллюстрация Нёрдс">
+      <p class="results-caption">С 2004 года любим точность во всем:</p>
       <table class="results-list">
         <tr class="results-values-item">
           <td  class="results-values">146<span class="values-percent">%</span></td>
@@ -105,34 +128,35 @@
         </tr>
       </table>
     </div>
-
+  </div>
+  
     <div class="partners-list">
       <h2 class="visually-hidden">Клиенты</h2>
       <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="partners-img" src="img/logo-html.png" width="200" height="68" alt="Логотип htmlacademy"></a>
       <a class="partners-link" href=""><img class="partners-img" src="img/logo-borodinski.png" width="209" height="90" alt="Логотип Borodinski"></a>
       <a class="partners-link" href=""><img class="partners-img" src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>
-      <a class="partners-link" href=""><img class="partners-img" src="img/logo-mishka.png" width="173" height="84" alt="Логотип Mishka"></a>
-    </div>
+      <a class="partners-link-4" href=""><img class="partners-img" src="img/logo-mishka.png" width="173" height="84" alt="Логотип Mishka"></a>
+    </div>    
   </main>
 
   <footer class="page-footer main-footer">
-    <div class="container">
-    <section class="footer-contacts">
+    <div class="container-contacts">
+    <div class="footer-contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</P>
-      <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-      <a href="blank.html">Напишите нам</a>
-      <img src="img/map.png" width="1440" height="416" alt="Карта">
-      <img src="img/map-marker.svg" width="231" height="190" alt="Маркер локации">
-    </section>
+      <p class="footer-contacts-name">NЁRDS DESIGN STUDIO</p>
+      <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+      <p class="footer-contacts-number"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+      <a class="button button-red-2" href="blank.html">Напишите нам</a>
+    </div>
+    <div class="img-map">
+      <img class="map" src="img/map.png" width="1440" height="416" alt="Карта">
+      <img class="map-marker" src="img/map-marker.svg" width="231" height="190" alt="Маркер локации">
+    </div>
+    </div>
 
     <section class="footer-social">
-      <h2 class="visually-hidden">Давайте дружить!</h2>
-      <p class="footer-text-header">Давайте дружить, это выгодно!</p>
-      <span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
-      <ul class="social-list">
+        <ul class="social-list">
         <li class="social-item">
           <a class="social-button" href="blank.html">
             <img class="soc-vk" src="img/vk-icon.svg" alt="Ссылка на страницу Вконтакте"></a>
@@ -148,36 +172,36 @@
           </a>
         </li>
       </ul>
+        <div class="footer-text">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <p class="footer-text-header">Давайте дружить, это выгодно!</p>
+        <span class="footer-discount">Скидка 10% для друзей из социальных сетей.</span>
+      </div>
     </section>
-    </div>
   </footer>
 
-  <section class="contact">
+  <section class="modal modal-message">
     <h2>Напишите нам</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="contact-item">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="contact-label" for="name">Ваше имя:</label>
+        <input class="label-text" id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="contact-item">
-        <label for="email">Ваш email:</label>
-        <input id="email" type="email" name="email" placeholder="email@example.com">
+        <label class="contact-label" for="email">Ваш email:</label>
+        <input class="label-text" id="email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p class="contact-item">
-        <label for="message">Ваш текст:</label>
-        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+      <p class="contact-item-message">
+        <label class="contact-label" for="message">Текст письма:</label>
+        <textarea class="label-message" id="message" name="message" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button button-red-4" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+ 
+    <script src="./js/modal.js"></script>
 
-  <section>
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <!--Тут будет карта-->
-    <button type="button">Закрыть</button>
-  </section>
-  
   </body>
   
   </html>
