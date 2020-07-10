@@ -40,11 +40,11 @@
       <p class="footer-contacts-name">NЁRDS DESIGN STUDIO</p>
       <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</P>
-      <p><a class="footer-contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+      <p class="footer-contacts-number"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
       <a class="button button-red-2" href="blank.html">Напишите нам</a>
       </div>
       <div class="img-map">
-      <img class="map" src="img/map.png" width="1440" height="416" alt="Карта">
+      <img class="map" src="img/map.png" width="1440" height="416" alt="Офис находится на ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">
       <img class="map-marker" src="img/map-marker.svg" width="231" height="190" alt="Маркер локации">
       </div>
     </div>
@@ -80,19 +80,19 @@
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="contact-item">
         <label class="contact-label" for="name">Ваше имя:</label>
-        <input class="login-name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="label-text" id="name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="contact-item">
         <label class="contact-label" for="email">Ваш email:</label>
-        <input class="login-email-user" id="email" type="email" name="email" placeholder="email@example.com">
+        <input class="label-text" id="email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p class="contact-item">
-        <label class="contact-label" for="message">Ваш текст:</label>
-        <textarea class="message-user" id="message" name="message" placeholder="В свободной форме"></textarea>
+      <p class="contact-item-message">
+        <label class="contact-label" for="message">Текст письма:</label>
+        <textarea class="label-message" id="message" name="message" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button button-red-3" type="submit">Отправить</button>
+      <button class="button button-red-4" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
   <script src="./js/modal.js"></script>

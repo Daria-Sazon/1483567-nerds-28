@@ -14,7 +14,7 @@ try {
   isStorageSupport = false;
 }
 
-message.addEventListener("click", function () {
+message.addEventListener("click", function (evt) {
     evt.preventDefault();
     messagePopup.classList.add("modal-show");
 
