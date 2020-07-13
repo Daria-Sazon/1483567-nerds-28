@@ -125,8 +125,27 @@
 .user-navigation a:active { 
   color: var(--basic-black);
   opacity: 0.3;
+
 }
- 
+
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-footer);
+}
+
+.site-navigation-current::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -13px;
+  left: 49px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
 .cart-icon {
   padding: 0px;
   margin: 0px;
@@ -271,16 +290,32 @@
   margin-left: 140px;
   margin-right: 60px;
   margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .service-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px;      
-    margin: 0px;
-    list-style: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.service-item:nth-child(3n){
+ margin-right: 0;
+}
+.service-item:nth-child(4n),
+.service-item:first-child {
+  margin-left: 0;
+}
 
   .service-item h3 {
     font-weight: bold;
