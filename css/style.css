@@ -308,6 +308,7 @@
 .service-item {
   width: 300px;
   display: inline-block;
+  vertical-align: baseline;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -729,7 +730,7 @@ color: var(--basic-black);
   margin: 0px;
 }
 
-.breadcrumbs li {
+.breadcrumbs .filter-sorting-item {
   position: relative;
   margin: 0px;
   margin-right: 25px;
